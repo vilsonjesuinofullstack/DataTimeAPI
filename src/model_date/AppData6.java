@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class AppData6 {
 
@@ -20,6 +21,6 @@ public class AppData6 {
 
         LocalDateTime dataHoraAtual = LocalDateTime.now();
 
-        //System.out.println("Data e Hora atual: " + new SimpleDateFormat("yyyy/MM/dd").format(dataHoraAtual.));
+        System.out.println("Data e Hora atual: " + dataHoraAtual.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
     }
 }
