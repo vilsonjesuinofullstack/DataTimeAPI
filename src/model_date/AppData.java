@@ -40,6 +40,8 @@ public class AppData {
 
         System.out.println("Data atual em formato padrao e String: " + simpleDateFormat.format(date));
 
+        System.out.println("Calendar data atual em formato padrao e String : " + calendar.getInstance().getTime());
+
         simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm.SS");
 
         System.out.println("Data em formato para banco de dados: " + simpleDateFormat.format(date));
